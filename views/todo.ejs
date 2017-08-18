@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Todo List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- Latest compiled and minified Fontwesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/styles.css" />
+</head>
+
+<body>
+    <h1>Todo App</h1>
+    <div id="todo-table">
+        <form>
+            <input type="text" name="item" value="" placeholder="Add new item.." required />
+            <button type="submit">Add Item</button>
+        </form>
+        <ul>
+            <% for(var i=0;i<todo.length;i++){ %>
+                <li><%= todo[i].item %></li>
+            <% } %>
+        </ul>
+    </div>
+
+    <!-- Latest compiled and minified JQuery -->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="assets/todo-list.js"></script>
+</body>
+
+</html>
